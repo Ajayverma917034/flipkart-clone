@@ -1,10 +1,12 @@
 import mongoose from "mongoose"
 
-const connectDatabase = () => {
-    mongoose.connect(process.env.MONGODB_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true })
-        .then((data) => {
-            console.log(`Mongodb connected with server : ${data.connection.host}`);
-        });
+const connectDatabase = async () => {
+    try {
+        await mongoose.connect(process.env.MONGODB_CONNECT);
+        console.log(`Server Running On ${mongoose.connection.host}`);
+    } catch (error) {
+        console.log(`${error}`);
+    }
 }
 
 
