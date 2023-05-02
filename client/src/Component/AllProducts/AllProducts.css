@@ -1,0 +1,28 @@
+.productHeading {
+    margin: 0 auto;
+
+    font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    padding: 2vmax;
+    color: rgba(0, 0, 0, 0.678);
+    text-align: center;
+
+}
+
+.categoryBox {
+    padding: 0;
+}
+
+.category-link {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.6);
+    font: 400 0.8vmax;
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.category-link:hover {
+    color: #ef9273;
+}

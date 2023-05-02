@@ -1,0 +1,35 @@
+.cartInput {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-top: 15px;
+}
+
+
+.cartInput>button {
+    border: none;
+    background-color: #ef9273;
+    padding: 6px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    margin-left: 10px;
+}
+
+.cartInput>button:hover {
+    background-color: #fef9f8;
+}
+
+
+.cartInput>input {
+
+    text-align: center;
+    border: none;
+    /* padding: 5px; */
+    width: 29px;
+    /* color: white; */
+    outline: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.74);
+    margin: 0 auto;
+}

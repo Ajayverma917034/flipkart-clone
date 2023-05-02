@@ -1,0 +1,50 @@
+.mainDivAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+}
+
+.detailBox>div {
+    margin-top: 20px;
+    display: flex;
+}
+
+.detailBox>div>p {
+    margin-left: 5px;
+    font-size: 20px;
+
+    display: flex;
+}
+
+.linktoprofile>a {
+    text-decoration: none;
+    color: #1976d2;
+    font-size: 20px;
+    margin-left: 5px;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+.linktoprofile>a:hover {
+    color: tomato;
+}
+
+.AddressDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.AddressDiv>div>div {
+    margin-top: 20px;
+    display: flex;
+}
+
+.AddressDiv>div>div>p {
+    margin-left: 5px;
+    font-size: 20px;
+
+    display: flex;
+}
