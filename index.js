@@ -30,9 +30,9 @@ const app = express();
 
 app.use(cors());
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_URL)
+    // res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_URL)
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE')
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Authorization')
+    // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Authorization')
     next()
 })
 
@@ -54,7 +54,7 @@ app.use(ErroThrow)
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 console.log(path.join(__dirname, "./client/build/index.html"))
-app.get("*", function (_, res) {
+app.get("*", function (req, res) {
     res.sendFile(
         path.join(__dirname, "./client/build/index.html"),
         function (err) {
